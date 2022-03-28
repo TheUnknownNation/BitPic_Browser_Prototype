@@ -11,7 +11,7 @@ var server = http.createServer(function(request, response) {
             response.write("This is a test");  
             response.end();  
             break;  
-        case '/loginPage.html':  
+        case '/login_details/loginPage.html':  
             fs.readFile(__dirname + path, function(error, data) {  
                 if (error) {  
                     response.writeHead(404);  
@@ -57,6 +57,21 @@ var server = http.createServer(function(request, response) {
             });  
             break;  
         case '/profilePage.html':  
+            fs.readFile(__dirname + path, function(error, data) {  
+                if (error) {  
+                    response.writeHead(404);  
+                    response.write(error);  
+                    response.end();  
+                } else {  
+                    response.writeHead(200, {  
+                        'Content-Type': 'text/html'  
+                    });  
+                    response.write(data);  
+                    response.end();  
+                }  
+            });  
+            break;  
+            case '/login_details/registrationPage.html':  
             fs.readFile(__dirname + path, function(error, data) {  
                 if (error) {  
                     response.writeHead(404);  
