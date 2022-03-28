@@ -95,3 +95,4 @@ var server = http.createServer(function(request, response) {
 });  
 server.listen(8080);  
 console.log("server listening on port: 8080");
+console.log("login page: 127.0.0.1:8080/login_details/loginPage.html")
