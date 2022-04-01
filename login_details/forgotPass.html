@@ -53,13 +53,20 @@ text-align: center;
     <div class="center">
       <form>
         <label for="email">Enter the email associated with the account</label><br>
-        <input type="text" id="email" name="email" class="center"><br><br>
-        <button type="button">Send Reset Link</button><br>
+        <input type="text" id="email" name="email" class="center" placeholder="john.doe@gmail.com"><br><br>
+        <button type="button" class="btn btn-primary" onclick="resetLink()" style="margin: 25px;">Send Reset
+          Link</button><br>
       </form>
+      <button type="button" class="btn btn-secondary" style="color: white; background-color: red;"><a
+          href="/login_details/loginPage.html" style="color: white; text-decoration: none;">Back</a></button>
     </div>
   </div>
 
-  
+  <script>
+    function resetLink() {
+      alert("Reset Email Sent");
+    }
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
