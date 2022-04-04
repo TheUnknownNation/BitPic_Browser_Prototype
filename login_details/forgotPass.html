@@ -38,7 +38,7 @@
     text-transform: uppercase;
     text-emphasis-color: #3d3d3d;
     margin-left: 25px;
-  "><b>BitPic</b></h1>
+  "><a href="/login_details/loginPage.html" style="text-decoration: none; color: white;"><b>BitPic</b></a></h1>
 
   <h2 style="
 fill: white;
@@ -53,12 +53,15 @@ text-align: center;
     <div class="center">
       <form>
         <label for="email">Enter the email associated with the account</label><br>
-        <input type="text" id="email" name="email" class="center" placeholder="john.doe@gmail.com"><br><br>
+        <input type="text" id="email" name="email" class="center" placeholder="john.doe@gmail.com" style="margin: 10px;"><br><br>
+      </form>
+      <div>
+        <button type="button" class="btn btn-secondary" style="color: white; background-color: red;"><a
+            href="/login_details/loginPage.html" style="color: white; text-decoration: none;">Back</a></button>
+
         <button type="button" class="btn btn-primary" onclick="resetLink()" style="margin: 25px;">Send Reset
           Link</button><br>
-      </form>
-      <button type="button" class="btn btn-secondary" style="color: white; background-color: red;"><a
-          href="/login_details/loginPage.html" style="color: white; text-decoration: none;">Back</a></button>
+      </div>
     </div>
   </div>
 
