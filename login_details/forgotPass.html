@@ -53,21 +53,22 @@ text-align: center;
     <div class="center">
       <form>
         <label for="email">Enter the email associated with the account</label><br>
-        <input type="text" id="email" name="email" class="center" placeholder="john.doe@gmail.com" style="margin: 10px;"><br><br>
-      </form>
-      <div>
+        <input type="text" id="email" name="email" class="center" placeholder="john.doe@gmail.com"
+          style="margin: 10px;"><br><br>
         <button type="button" class="btn btn-secondary" style="color: white; background-color: red;"><a
             href="/login_details/loginPage.html" style="color: white; text-decoration: none;">Back</a></button>
 
-        <button type="button" class="btn btn-primary" onclick="resetLink()" style="margin: 25px;">Send Reset
+        <button type="submit" class="btn btn-primary" onclick="resetLink()" style="margin: 25px;"
+          href="javascript:;">Send Reset
           Link</button><br>
-      </div>
+      </form>
     </div>
   </div>
 
   <script>
+    var emailInput = document.getElementById("email").value;
     function resetLink() {
-      alert("Reset Password Email Has Been Sent");
+      alert("Reset Password Email Has Been Sent To " + emailInput);
     }
   </script>
 
