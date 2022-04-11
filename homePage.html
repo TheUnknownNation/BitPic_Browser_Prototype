@@ -444,8 +444,7 @@
                         </div>
                         <header>Drag & Drop to Upload File</header>
                         <span>OR</span>
-                        <button class="btn btn-primary">Browse File</button>
-                        <input type="file" hidden>
+                        <input class="form-control" id="formFileMultiple" type="file">
                         <div><br /></div>
 
                         <style>
@@ -464,7 +463,33 @@
                             }
                         </style>
                         <form action="#" method="get">
-                            <
+                            <label for="CPUDataList" class="form-label">CPUs</label>
+                            <input class="form-control" list="datalistOptionsCPU" id="CPUDataList"
+                                placeholder="Type to search...">
+                            <datalist id="datalistOptionsCPU">
+                                <option value="Intel-12900k"></option>
+                                <option value="Intel-12700k"></option>
+                                <option value="Intel-12600k"></option>
+                                <option value="Intel-12400"></option>
+                                <option value="AMD-5950x"></option>
+                                <option value="AMD-5900x"></option>
+                                <option value="AMD-5800x"></option>
+                                <option value="AMD-5600x"></option>
+                            </datalist>
+
+                            <label for="GPUDataList" class="form-label">GPUs</label>
+                            <input class="form-control" list="datalistOptionsGPU" id="GPUDataList"
+                                placeholder="Type to search...">
+                            <datalist id="datalistOptionsGPU">
+                                <option value="NVIDIA-RTX 3090"></option>
+                                <option value="NVIDIA-RTX 3080"></option>
+                                <option value="NVIDIA-RTX 3070"></option>
+                                <option value="NVIDIA-RTX 3060"></option>
+                                <option value="AMD-RX6900XT"></option>
+                                <option value="AMD-RX6800XT"></option>
+                                <option value="AMD-RX6800"></option>
+                                <option value="AMD-RX6700XT"></option>
+                            </datalist>
                             <textarea cols="50" rows="5" placeholder="Caption" id="caption"></textarea>
                         </form>
                     </div>
