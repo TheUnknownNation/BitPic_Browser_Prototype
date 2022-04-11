@@ -14,9 +14,10 @@
 
     .center {
       margin: auto;
-      width: 60%;
+      width: 50%;
       padding: 10px;
-      width: 40%
+      vertical-align: middle;
+      justify-content: center;
     }
   </style>
 
@@ -49,23 +50,23 @@
     text-align: center;
   "><b>Log in</b></h2>
 
-  <div class="container" style="text-align: center">
+  <div class="container" style="text-align: center; vertical-align: middle; justify-content: center;">
     <div class="center">
       <form>
-        <label for="email">Email: </label> <input type="text" id="email" name="email" class="center" placeholder="john.doe@gmail.com" style="float: right;"><br><br><br>
+        <label for="email" style="text-align: right;">Email: </label> <input type="text" id="email" name="email" class="center" placeholder="john.doe@gmail.com" style="float: right;"><br><br><br>
         
-        <label for="pass">Password: </label> <input type="text" id="pass" name="pass" class="center" placeholder="Password" style="float: right;"><br /><br /><br>
+        <label for="pass" style="text-align: right;">Password: </label> <input type="text" id="pass" name="pass" class="center" placeholder="Password" style="float: right;"><br /><br /><br>
         
         <button type="button" class="btn btn-primary"><a href="/homePage.html"
             style="color: white; text-decoration: none; margin: 15px; padding: 10px; float: right;">Login</a></button><br />
       </form>
      
 
-      <div style="text-align: center; margin: 25px;">
-        <a href="/login_details/forgotPass.html" style="color: white; margin-bottom: 25px; padding: 45px;">Forgot your password?</a><br>
+      <div style="text-align: center; margin: 25px; padding: 25px;">
+        <a href="/login_details/forgotPass.html" style="color: white; margin-bottom: 25px;">Forgot your password?</a><br>
       </div>
-      <div style="text-align: center; margin: 25px;">
-        <a href="/login_details/registrationPage.html" style="color: white; margin: 25px; padding: 45px;">Don't have an account? Sign
+      <div style="text-align: center; margin: 25px; padding: 25px;">
+        <a href="/login_details/registrationPage.html" style="color: white; margin: 25px;">Don't have an account? Sign
           up</a>
       </div>
 
